@@ -24,7 +24,7 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
   let allTransportMethods = this.journeys.map(journey => journey.transport);
-  return allTransportMethods.filter((transport, index) => fullArray.indexOf(transport) >= index)
+  return allTransportMethods.filter((transport, index) => allTransportMethods.indexOf(transport) >= index)
 };
 
 
